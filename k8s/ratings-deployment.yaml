@@ -16,8 +16,8 @@ spec:
         app: bookinfo-uat-ratings
     spec:
       containers:
-      - name: bookinfo-uat-ratings
-        image: ghcr.io/worawit4516/bookinfo.ratings:uat
+      - name: bookinfo-dev-ratings
+        image: ghcr.io/worawit4516/bookinfo.ratings:dev
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -37,6 +37,6 @@ spec:
         - name: SERVICE_VERSION
           value: v2
         - name: MONGO_DB_URL
-          value: mongodb://bookinfo-uat-ratings-mongodb:27017/ratings
+          value: mongodb://bookinfo-dev-ratings-mongodb:27017/ratings
       imagePullSecrets:
       - name: registry-bookinfo

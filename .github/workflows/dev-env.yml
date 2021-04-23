@@ -11,4 +11,4 @@ jobs:
         uses: actions/checkout@v2
       - run: docker build -t ghcr.io/worawit4516/bookinfo.ratings:dev .
       - run: docker images
-      - run: docker push ghcr.io/worawit451/bookinfo.ratings:dev
+      - run: docker push ghcr.io/worawit4516/bookinfo.ratings:dev

@@ -1,0 +1,5 @@
+name: uat-env
+on:
+  push:
+    branches:
+      - master

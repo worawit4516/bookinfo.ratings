@@ -37,7 +37,7 @@ jobs:
               }
             }
   acceptance_test:
-    needs: deploy
+    needs: deploy-prd
     runs-on: ubuntu-20.04
     steps:
       - name: acceptance test
